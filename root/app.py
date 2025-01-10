@@ -108,6 +108,7 @@ for line in trans_lines:
 
 app = Dash(__name__)
 app.title = 'Network Visualization'
+server = app.server
 
 app.layout = html.Div([
     html.H1('Network Visualization', style={'text-align': 'center', 'padding':'10px'}),
