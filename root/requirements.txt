@@ -1,0 +1,6 @@
+dash==2.13.0
+dash-cytoscape==0.3.0
+plotly==5.17.0
+pandas==2.1.2
+numpy==1.26.0
+pypsa==0.19.2

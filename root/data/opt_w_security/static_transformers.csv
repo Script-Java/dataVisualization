@@ -1,0 +1,4 @@
+Transformer,bus0,bus1,type,model,x,r,g,b,s_nom,s_nom_mod,s_nom_extendable,s_nom_min,s_nom_max,s_max_pu,capital_cost,num_parallel,tap_ratio,tap_side,tap_position,phase_shift,build_year,lifetime,v_ang_min,v_ang_max,sub_network,x_pu,r_pu,g_pu,b_pu,x_pu_eff,r_pu_eff,s_nom_opt
+xf1-4,1,4,,pi,0.0576,0.001,0.0,0.0,1000.0,0.0,False,0.0,inf,1.0,0.0,1.0,1.0,0,0,0.0,0,inf,-inf,inf,0,5.76e-05,1e-06,0.0,0.0,5.76e-05,1e-06,1000.0
+xf2-7,2,7,,pi,0.0586,0.001,0.0,0.0,1000.0,0.0,False,0.0,inf,1.0,0.0,1.0,1.0,0,0,0.0,0,inf,-inf,inf,0,5.86e-05,1e-06,0.0,0.0,5.86e-05,1e-06,1000.0
+xf9-3,9,3,,pi,0.0625,0.001,0.0,0.0,1000.0,0.0,False,0.0,inf,1.0,0.0,1.0,1.0,0,0,0.0,0,inf,-inf,inf,0,6.25e-05,1e-06,0.0,0.0,6.25e-05,1e-06,1000.0

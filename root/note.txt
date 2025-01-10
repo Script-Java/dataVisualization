@@ -1,0 +1,79 @@
+# List of Busses
+static_busses = [
+    {'id':'1', 'label': '1', 'x': 0, 'y':0, 'classes':'bus'},
+    {'id':'2', 'label': '2', 'x': -2, 'y':3, 'classes':'bus'},
+    {'id':'3', 'label': '3', 'x': 2, 'y':3, 'classes':'bus'},
+    {'id':'4', 'label': '4', 'x': 0, 'y':1, 'classes':'bus'},
+    {'id':'5', 'label': '5', 'x': -1, 'y':2, 'classes':'bus'},
+    {'id':'6', 'label': '6', 'x': 1, 'y':2, 'classes':'bus'},
+    {'id':'7', 'label': '7', 'x': -1, 'y':3, 'classes':'bus'},
+    {'id':'8', 'label': '8', 'x': 0, 'y':3, 'classes':'bus'},
+    {'id':'9', 'label': '9', 'x': 1, 'y':3, 'classes':'bus'}
+
+]
+
+static_lines = [
+    {'id': 'ln4-5', 'source': '4', 'target': '5'},
+    {'id': 'ln6-4', 'source': '6', 'target': '4'},
+    {'id': 'ln6-9', 'source': '6', 'target': '9'},
+    {'id': 'ln5-7', 'source': '5', 'target': '7'},
+    {'id': 'ln7-8', 'source': '7', 'target': '8'},
+    {'id': 'ln8-9', 'source': '8', 'target': '9'},
+
+]
+
+static_loads = [
+    {'id':'ld1', 'label': 'ld1', 'x': 3, 'y':2, 'classes':'loads'},
+    {'id':'ld2', 'label': 'ld2', 'x': 10, 'y':10, 'classes':'loads'},]
+
+static_loads_line = [
+    {'id': 'ld1_line', 'source': 'ld1', 'target':'5'},
+    {'id': 'ld2_line', 'source': 'ld2', 'target':'6'}
+
+]
+
+static_transformers = [
+    {'id':'xf1-4', 'label': 'xf1-4', 'x': 0, 'y':0, 'classes':'loads'},
+    {'id':'xf2-7', 'label': 'xf2-7', 'x': 0, 'y':0, 'classes':'loads'},
+    {'id':'xf9-3', 'label': 'xf9-3', 'x': 0, 'y':0, 'classes':'loads'},
+
+]
+
+static_transformers_line = [
+    {'id': 'ld1_line', 'source': 'ld1', 'target':'5'},
+    {'id': 'ld2_line', 'source': 'ld2', 'target':'6'}
+]
+
+
+# add Buss
+for bus in static_busses:
+    w_security.manual_plot(id=bus['id'], label=bus['label'], x=bus['x'], y=bus['y'])
+    
+for lines in static_lines:
+    w_security.manual_line(id=lines['id'], source=lines['source'], target=lines['target'])
+
+# add buss lines
+for load in static_loads:
+    w_security.manual_plot(id=load['id'], label=load['label'], x=load['x'], y=load['y'])
+
+# add buss lines
+for load_line in static_loads_line:
+    w_security.manual_line(id=load_line['id'], source=load_line['source'], target=load_line['target'])
+
+for trans in static_transformers:
+    w_security.manual_plot(id=trans['id'], label=trans['label'], classes=trans['classes'])
+
+# Add generator lines
+for trans_line in static_transformers_line:
+    w_security.manual_line(id=trans_line['id'], source=trans_line['source'], target=trans_line['target'])
+
+
+
+["random","preset","circle","concentric","grid","breadthfirst","cose","cose-bilkent","fcose","cola","euler","spread","dagre","klay"].
+
+
+
+TODO
+- Finish Dropdown capabilities
+- add post CTG graph vs No security
+

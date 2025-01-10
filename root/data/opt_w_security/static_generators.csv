@@ -1,0 +1,4 @@
+Generator,bus,control,type,p_nom,p_nom_mod,p_nom_extendable,p_nom_min,p_nom_max,p_min_pu,p_max_pu,p_set,q_set,sign,carrier,marginal_cost,marginal_cost_quadratic,build_year,lifetime,capital_cost,efficiency,committable,start_up_cost,shut_down_cost,stand_by_cost,min_up_time,min_down_time,up_time_before,down_time_before,ramp_limit_up,ramp_limit_down,ramp_limit_start_up,ramp_limit_shut_down,weight,p_nom_opt
+Gn1,1,Slack,,500.0,0.0,False,0.0,inf,0.0,1.0,0.0,0.0,1.0,nuclear,10.0,0.0,0,inf,0.0,1.0,True,0.0,0.0,0.0,0,0,1,0,,,1.0,1.0,1.0,500.0
+Gn2,2,PQ,,200.0,0.0,False,0.0,inf,0.0,1.0,0.0,0.0,1.0,gas,50.0,0.0,0,inf,0.0,1.0,True,0.0,0.0,0.0,0,0,1,0,,,1.0,1.0,1.0,200.0
+Gn3,3,PQ,,200.0,0.0,False,0.0,inf,0.0,1.0,0.0,0.0,1.0,wind,0.0,0.0,0,inf,0.0,1.0,True,0.0,0.0,0.0,0,0,1,0,,,1.0,1.0,1.0,200.0
